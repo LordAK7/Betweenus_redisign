@@ -1,7 +1,7 @@
 <!-- This project was started on June 13 2022 -->
 <!-- Created by Aditya Vijay Kamble - Github profile - LordAK7 -->
 <!-- Co-Authour Arnav Shetty - Github profile - IDK -->
-<!-- Project on Redesigning our school website frontend -->
+<!-- Project on Redesigning our  school portal website frontend -->
 <!-- Aditya Kamble info
     Class 9th
     Living in India
@@ -12,7 +12,7 @@
 <!-- Aditya Kamble info
     Class 9th
     Living in India
-    " Arnav enter your quote " - Arnav Shetty
+    " Arnav enter your quote " - Arnav Shetty -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +22,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/navbar.css">
     
+    <!--========== Javascript ====== -->
+
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
@@ -128,35 +130,6 @@
     <section class="home">
         <div class="text">Betweenus Redesign</div>
     </section>
-
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
-    </script>
 
 </body>
 </html>
